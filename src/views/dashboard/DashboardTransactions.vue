@@ -64,7 +64,7 @@ export default {
   methods: {
     retrieveTransactions() {
       axios
-        .post("http://localhost:3000/retrieve_transactions", {
+        .post("https://belvo-demo.herokuapp.com/retrieve_transactions", {
           transactions: { link: localStorage.link, date_from: this.selected }
         })
         .then(response => {

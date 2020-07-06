@@ -50,7 +50,7 @@ export default {
   methods: {
     retrieveAccounts() {
       axios
-        .post("http://localhost:3000/retrieve_accounts", {
+        .post("https://belvo-demo.herokuapp.com/retrieve_accounts", {
           accounts: { link: localStorage.link }
         })
         .then(response => {

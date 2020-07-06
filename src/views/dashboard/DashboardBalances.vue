@@ -46,7 +46,7 @@ export default {
     this.loaded = false 
     try {
       axios
-        .post("http://localhost:3000/retrieve_balance", {
+        .post("https://belvo-demo.herokuapp.com/retrieve_balance", {
           balance: { link: localStorage.link, selected: this.selected }
         })
         .then(response => {

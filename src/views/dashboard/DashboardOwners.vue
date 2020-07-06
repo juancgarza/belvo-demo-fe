@@ -52,7 +52,7 @@ export default {
   methods: {
     retrieveOwners() {
       axios
-        .post("http://localhost:3000/retrieve_owners", {
+        .post("https://belvo-demo.herokuapp.com/retrieve_owners", {
           owners: { link: localStorage.link }
         })
         .then(response => {
