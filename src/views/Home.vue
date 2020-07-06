@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     openBelvoWidget () {
-      axios.get('http://localhost:3000/get_token')
+      axios.get('https://belvo-demo.herokuapp.com/get_token')
           .then((response) => {
             this.access_token = response.data.access;
             console.log(window.belvoSDK.createWidget)
